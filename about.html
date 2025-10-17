@@ -1,53 +1,109 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>FEESH - About Us</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
-  <header>
-    <h1>FEESH</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="discord.html">Discord</a>
-      <a href="feedback.html">Feedback</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">FEESH</a>
+      <button id="nav-toggle-2" class="nav-toggle" aria-label="Open navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="main-nav-2" class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="discord.html">Discord</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h2>About Us</h2>
-    <p>Some text about FEESH and what we do.</p>
+  <section class="hero hero-small">
+    <img src="images/placeholder-about-hero.jpg" alt="About hero placeholder" class="hero-img" />
+    <div class="hero-overlay">
+      <h1>Building the world's most passionate fishing community,<br><strong>one cast at a time.</strong></h1>
+    </div>
   </section>
 
-  <section>
-    <h3>Our Story</h3>
-    <p>We started as a small group of friends who loved fishing.</p>
-  </section>
+  <main class="container">
+    <section class="story">
+      <h2>Our Story</h2>
+      <p>FEESH was born from a simple idea: fishing is better when shared. What started as a small group of friends sharing their weekend catches has grown into a thriving community of thousands of fishing enthusiasts from around the world.</p>
+      <p>We understand that fishing is more than just catching fish—it's about the early morning mist, the excitement of that first tug, and the stories we tell long after we've returned home. Our platform celebrates all aspects of the fishing experience.</p>
+    </section>
 
-  <section>
-    <h3>Community Numbers</h3>
-    <ul>
-      <li>Members: 2500+</li>
-      <li>Photos Shared: 15K+</li>
-      <li>Fishing Spots: 500+</li>
-    </ul>
-  </section>
+    <section class="stats">
+      <h3>Community by the Numbers</h3>
+      <div class="stats-row">
+        <div class="stat">
+          <div class="stat-num">2,500+</div>
+          <div class="stat-label">Active Members</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">15K+</div>
+          <div class="stat-label">Photos Shared</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">500+</div>
+          <div class="stat-label">Fishing Spots</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">24/7</div>
+          <div class="stat-label">Community Support</div>
+        </div>
+      </div>
+    </section>
 
-  <section>
-    <h3>What We Stand For</h3>
-    <ul>
-      <li>Passion for Fishing</li>
-      <li>Community First</li>
-      <li>Knowledge Sharing</li>
-      <li>Conservation Minded</li>
-    </ul>
-  </section>
+    <section class="cards">
+      <h3>What We Stand For</h3>
+      <div class="card-grid">
+        <div class="info-card">
+          <h4>Passion for Fishing</h4>
+          <p>We believe fishing is more than a hobby—it's a way to connect with nature and find peace on the water.</p>
+        </div>
+        <div class="info-card">
+          <h4>Community First</h4>
+          <p>Our members are the heart of FEESH. We foster an inclusive environment where everyone can learn and grow.</p>
+        </div>
+        <div class="info-card">
+          <h4>Knowledge Sharing</h4>
+          <p>From beginners to experts, we encourage sharing experiences, tips, and techniques to help everyone improve.</p>
+        </div>
+        <div class="info-card">
+          <h4>Conservation Minded</h4>
+          <p>We promote responsible fishing practices and environmental stewardship to preserve our waters for future generations.</p>
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <p>©2025 FEESH.com</p>
+    <section class="more">
+      <div class="more-text">
+        <h3>More Than Just a Community</h3>
+        <p>At FEESH, we're not just about sharing photos and stories. We're building a comprehensive resource for fishing enthusiasts of all levels. Our members regularly share gear reviews, technique tutorials, seasonal fishing guides, and location recommendations.</p>
+      </div>
+      <div class="more-image">
+        <img src="images/placeholder-gear.jpg" alt="Gear placeholder" />
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="copy">©2025 FEESH.com</div>
+      <div class="socials">
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Discord">DC</a>
+      </div>
+    </div>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 </html>

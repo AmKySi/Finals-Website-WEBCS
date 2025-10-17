@@ -1,76 +1,179 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>FEESH - Feedback</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
-  <header>
-    <h1>FEESH</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="discord.html">Discord</a>
-      <a href="feedback.html">Feedback</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">FEESH</a>
+      <button id="nav-toggle-4" class="nav-toggle" aria-label="Open navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="main-nav-4" class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="discord.html">Discord</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h2>Share Your Feedback</h2>
-    <p>Help us improve the FEESH community experience.</p>
+  <section class="hero hero-small">
+    <img src="images/placeholder-feedback-hero.jpg" alt="Feedback hero placeholder" class="hero-img" />
+    <div class="hero-overlay">
+      <h1>Share Your Feedback</h1>
+      <p>Help us improve the FEESH community experience. Your feedback matters to us.</p>
+    </div>
   </section>
 
-  <main>
-    <section>
-      <h3>Rate Your Experience</h3>
+  <main class="container">
+    <section class="feedback-form-area">
+      <h2>Rate Your Experience</h2>
+      <p class="lead">Discord offers the perfect platform for our fishing community to connect, share, and learn together in real-time.</p>
 
-      <form>
-        <p>Overall Experience (1-10):</p>
-        <input type="number" name="overall" min="1" max="10">
+      <form id="feedback-form" class="feedback-form">
+        <table class="rating-table">
+          <thead>
+            <tr><th>Aspect</th><th>Rating (1-10)</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <strong>Overall Experience</strong>
+                <div class="small">How would you rate your overall experience with FEESH?</div>
+              </td>
+              <td class="rating-cell">
+                <!-- Simple radio group, visually styled -->
+                <div class="rating-row">
+                  <!-- generate radios 1..10 (only visual, not required to pick) -->
+                  <label class="rating-dot">1<input type="radio" name="overall" value="1"></label>
+                  <label class="rating-dot">2<input type="radio" name="overall" value="2"></label>
+                  <label class="rating-dot">3<input type="radio" name="overall" value="3"></label>
+                  <label class="rating-dot">4<input type="radio" name="overall" value="4"></label>
+                  <label class="rating-dot">5<input type="radio" name="overall" value="5"></label>
+                  <label class="rating-dot">6<input type="radio" name="overall" value="6"></label>
+                  <label class="rating-dot">7<input type="radio" name="overall" value="7"></label>
+                  <label class="rating-dot">8<input type="radio" name="overall" value="8"></label>
+                  <label class="rating-dot">9<input type="radio" name="overall" value="9"></label>
+                  <label class="rating-dot">10<input type="radio" name="overall" value="10"></label>
+                </div>
+              </td>
+            </tr>
 
-        <p>Community Helpfulness (1-10):</p>
-        <input type="number" name="helpfulness" min="1" max="10">
+            <!-- Copy same pattern for three more rows -->
+            <tr>
+              <td><strong>Community Helpfulness</strong><div class="small">How helpful have community members been to you?</div></td>
+              <td class="rating-cell">
+                <div class="rating-row">
+                  <label class="rating-dot">1<input type="radio" name="helpfulness" value="1"></label>
+                  <label class="rating-dot">2<input type="radio" name="helpfulness" value="2"></label>
+                  <label class="rating-dot">3<input type="radio" name="helpfulness" value="3"></label>
+                  <label class="rating-dot">4<input type="radio" name="helpfulness" value="4"></label>
+                  <label class="rating-dot">5<input type="radio" name="helpfulness" value="5"></label>
+                  <label class="rating-dot">6<input type="radio" name="helpfulness" value="6"></label>
+                  <label class="rating-dot">7<input type="radio" name="helpfulness" value="7"></label>
+                  <label class="rating-dot">8<input type="radio" name="helpfulness" value="8"></label>
+                  <label class="rating-dot">9<input type="radio" name="helpfulness" value="9"></label>
+                  <label class="rating-dot">10<input type="radio" name="helpfulness" value="10"></label>
+                </div>
+              </td>
+            </tr>
 
-        <p>Community Friendliness (1-10):</p>
-        <input type="number" name="friendliness" min="1" max="10">
+            <tr>
+              <td><strong>Community Friendliness</strong><div class="small">How welcoming and friendly is our community?</div></td>
+              <td class="rating-cell">
+                <div class="rating-row">
+                  <label class="rating-dot">1<input type="radio" name="friendliness" value="1"></label>
+                  <label class="rating-dot">2<input type="radio" name="friendliness" value="2"></label>
+                  <label class="rating-dot">3<input type="radio" name="friendliness" value="3"></label>
+                  <label class="rating-dot">4<input type="radio" name="friendliness" value="4"></label>
+                  <label class="rating-dot">5<input type="radio" name="friendliness" value="5"></label>
+                  <label class="rating-dot">6<input type="radio" name="friendliness" value="6"></label>
+                  <label class="rating-dot">7<input type="radio" name="friendliness" value="7"></label>
+                  <label class="rating-dot">8<input type="radio" name="friendliness" value="8"></label>
+                  <label class="rating-dot">9<input type="radio" name="friendliness" value="9"></label>
+                  <label class="rating-dot">10<input type="radio" name="friendliness" value="10"></label>
+                </div>
+              </td>
+            </tr>
 
-        <p>Platform Organization (1-10):</p>
-        <input type="number" name="organization" min="1" max="10">
+            <tr>
+              <td><strong>Platform Organization</strong><div class="small">How well organized and easy to navigate is our platform?</div></td>
+              <td class="rating-cell">
+                <div class="rating-row">
+                  <label class="rating-dot">1<input type="radio" name="organization" value="1"></label>
+                  <label class="rating-dot">2<input type="radio" name="organization" value="2"></label>
+                  <label class="rating-dot">3<input type="radio" name="organization" value="3"></label>
+                  <label class="rating-dot">4<input type="radio" name="organization" value="4"></label>
+                  <label class="rating-dot">5<input type="radio" name="organization" value="5"></label>
+                  <label class="rating-dot">6<input type="radio" name="organization" value="6"></label>
+                  <label class="rating-dot">7<input type="radio" name="organization" value="7"></label>
+                  <label class="rating-dot">8<input type="radio" name="organization" value="8"></label>
+                  <label class="rating-dot">9<input type="radio" name="organization" value="9"></label>
+                  <label class="rating-dot">10<input type="radio" name="organization" value="10"></label>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
 
-        <h4>Tell Us More</h4>
-        <p>Name (Optional): <input type="text" name="name"></p>
-        <p>Email (Optional): <input type="email" name="email"></p>
-        <p>Describe your Experience:<br><textarea name="experience"></textarea></p>
-        <p>Suggestions for Improvement:<br><textarea name="suggestions"></textarea></p>
-        <p>Would you recommend FEESH to others?<br><input type="text" name="recommend"></p>
+        <fieldset class="tell-more">
+          <legend>Tell Us More</legend>
+          <label>Name (Optional)<input type="text" name="name" /></label>
+          <label>Email (Optional)<input type="email" name="email" /></label>
+          <label>Describe your Experience<textarea name="experience"></textarea></label>
+          <label>Suggestions for improvement<textarea name="suggestions"></textarea></label>
+          <label>Would you recommend FEESH to others?<input type="text" name="recommend" /></label>
+        </fieldset>
 
-        <p><button type="submit">Submit Feedback</button></p>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-dark">Submit Feedback</button>
+        </div>
+
+        <p class="small-note">Your feedback is anonymous unless you choose to provide your contact information.</p>
       </form>
-
-      <p>Your feedback is anonymous unless you provide contact info.</p>
     </section>
 
-    <section>
-      <h3>Frequently Asked Questions</h3>
-
-      <h4>How is my feedback used?</h4>
-      <p>We use feedback to improve the community experience.</p>
-
-      <h4>Is my feedback anonymous?</h4>
-      <p>Yes, unless you provide contact details.</p>
-
-      <h4>Will I get a response?</h4>
-      <p>If you include your email, we might follow up with updates.</p>
-
-      <h4>How often should I submit feedback?</h4>
-      <p>Anytime! Your input is always welcome.</p>
+    <section class="faq container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-grid">
+        <div class="faq-card">
+          <h4>How is my feedback used?</h4>
+          <p>We use your feedback to identify areas for improvement, prioritize new features, and enhance the overall community experience for all members.</p>
+        </div>
+        <div class="faq-card">
+          <h4>Is my feedback anonymous?</h4>
+          <p>Yes, your feedback is completely anonymous unless you choose to provide your contact information for follow-up questions.</p>
+        </div>
+        <div class="faq-card">
+          <h4>Will I get a response?</h4>
+          <p>If you provide your email, we may reach out for clarification or to let you know about improvements we've made based on your suggestions.</p>
+        </div>
+        <div class="faq-card">
+          <h4>How often should I submit feedback?</h4>
+          <p>We welcome feedback anytime! Whether you're new or a long-time member, your perspective is valuable to us.</p>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>©2025 FEESH.com</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="copy">©2025 FEESH.com</div>
+      <div class="socials">
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Discord">DC</a>
+      </div>
+    </div>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 </html>

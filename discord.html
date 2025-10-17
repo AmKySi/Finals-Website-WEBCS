@@ -1,75 +1,119 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>FEESH - Discord</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-
-  <header>
-    <h1>FEESH</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="discord.html">Discord</a>
-      <a href="feedback.html">Feedback</a>
-    </nav>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">FEESH</a>
+      <button id="nav-toggle-3" class="nav-toggle" aria-label="Open navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="main-nav-3" class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="discord.html">Discord</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h2>Join Our Discord Community</h2>
-    <p>Connect with other fishing enthusiasts in real time.</p>
+  <section class="hero hero-dark">
+    <img src="images/placeholder-discord-hero.jpg" alt="Discord hero placeholder" class="hero-img" />
+    <div class="hero-overlay">
+      <h1>Join Our Discord Community</h1>
+      <p>Connect with over 2,500 fishing enthusiasts in real-time conversations, photo sharing, and live fishing adventures.</p>
+    </div>
   </section>
 
-  <section>
-    <h3>Why Discord?</h3>
-    <p>Discord helps our fishing community stay connected and share tips.</p>
+  <main class="container">
+    <section class="why">
+      <h2>Why Discord?</h2>
+      <p class="lead">Discord offers the perfect platform for our fishing community to connect, share, and learn together in real-time.</p>
 
-    <ul>
-      <li>Real-time Chat</li>
-      <li>Photo Sharing</li>
-      <li>Voice Channels</li>
-      <li>Expert Advice</li>
-    </ul>
-  </section>
+      <div class="card-grid">
+        <div class="info-card">
+          <h4>Real-time Chat</h4>
+          <p>Connect instantly with fellow anglers and get immediate responses to your questions.</p>
+        </div>
+        <div class="info-card">
+          <h4>Photo Sharing</h4>
+          <p>Share your catches, beautiful scenery, and fishing setups with high-quality images.</p>
+        </div>
+        <div class="info-card">
+          <h4>Voice Channels</h4>
+          <p>Join voice chats during live fishing trips or participate in weekly community calls.</p>
+        </div>
+        <div class="info-card">
+          <h4>Expert Advice</h4>
+          <p>We promote responsible fishing practices and environmental stewardship to preserve our waters for future generations.</p>
+        </div>
+      </div>
+    </section>
 
-  <section>
-    <h3>Our Channels</h3>
-    <ul>
-      <li># general-chat</li>
-      <li># catch-of-the-day</li>
-      <li># fishing-spots</li>
-      <li># gear-talk</li>
-      <li># technique-tips</li>
-      <li># trip-planning</li>
-    </ul>
-  </section>
+    <section class="channels">
+      <h3>Explore Our Channels</h3>
+      <div class="channels-grid">
+        <div class="channel"># general-chat <span class="channel-sub">Welcome newcomers and general discussions</span></div>
+        <div class="channel"># catch-of-the-day <span class="channel-sub">Share your latest catches with photos and stories</span></div>
+        <div class="channel"># fishing-spots <span class="channel-sub">Connect instantly with fellow anglers and get immediate responses to your questions.</span></div>
+        <div class="channel"># gear-talk <span class="channel-sub">Discuss equipment, reviews, and recommendations</span></div>
+        <div class="channel"># technique-tips <span class="channel-sub">Learn and share fishing techniques and tactics</span></div>
+        <div class="channel"># trip-planning <span class="channel-sub">Organize group trips and fishing expeditions</span></div>
+      </div>
+    </section>
 
-  <section>
-    <h3>Community Guidelines</h3>
-    <h4>Do's</h4>
-    <ul>
-      <li>Share experiences and photos</li>
-      <li>Be respectful</li>
-      <li>Follow fishing laws</li>
-    </ul>
+    <section class="guidelines">
+      <h3>Community Guidelines</h3>
+      <div class="guideline-row">
+        <div class="guideline-card">
+          <h4>Do's</h4>
+          <ul>
+            <li>Share your fishing experiences and photos</li>
+            <li>Ask questions and help others learn</li>
+            <li>Respect fellow community members</li>
+            <li>Follow local fishing regulations</li>
+          </ul>
+        </div>
+        <div class="guideline-card">
+          <h4>Don'ts</h4>
+          <ul>
+            <li>Share exact coordinates of sensitive spots</li>
+            <li>Post inappropriate or offensive content</li>
+            <li>Spam channels with unrelated content</li>
+            <li>Promote illegal fishing practices</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    <h4>Don'ts</h4>
-    <ul>
-      <li>No spam or offensive content</li>
-      <li>No illegal fishing</li>
-    </ul>
-  </section>
+    <section class="cta-band">
+      <h3>Ready to Join the Conversation?</h3>
+      <p>Become part of the most active fishing community on Discord. Share your passion and make lasting friendships with fellow anglers.</p>
+      <div class="cta-row">
+        <a href="#" class="btn btn-primary">Join Discord Server</a>
+        <a href="#" class="btn btn-outline">Learn More About Discord</a>
+      </div>
+    </section>
+  </main>
 
-  <section>
-    <h3>Join Us!</h3>
-    <p>Become part of the FEESH Discord community today.</p>
-    <a href="#">Join Discord Server</a>
-  </section>
-
-  <footer>
-    <p>©2025 FEESH.com</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="copy">©2025 FEESH.com</div>
+      <div class="socials">
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Discord">DC</a>
+      </div>
+    </div>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 </html>

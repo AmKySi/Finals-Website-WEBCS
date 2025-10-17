@@ -1,50 +1,89 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>FEESH - Home (Early Version)</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FEESH - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">FEESH</a>
 
-  <header>
-    <h1>FEESH</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="discord.html">Discord</a>
-      <a href="feedback.html">Feedback</a>
-    </nav>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Open navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="discord.html">Discord</a></li>
+          <li><a href="feedback.html">Feedback</a></li>     
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section>
-    <h2>Welcome to FEESH</h2>
-    <p>Connect with fishing enthusiasts, share experiences, and discover great fishing spots.</p>
-    <a href="about.html">Learn More</a>
-    <a href="discord.html">Join Community</a>
+  <!-- Hero with placeholder image -->
+  <section class="hero">
+    <img src="images/placeholder-hero.jpg" alt="Hero placeholder" class="hero-img" />
+    <div class="hero-overlay">
+      <img src="images/placeholder-logo.png" alt="FEESH logo" class="hero-logo" />
+      <p class="hero-sub">Connect with passionate fishing enthusiasts, share your experiences, and discover the best fishing spots together.</p>
+      <div class="hero-cta">
+        <a class="btn btn-light" href="about.html">Learn More</a>
+        <a class="btn btn-dark" href="discord.html">Join Community</a>
+      </div>
+    </div>
   </section>
 
+  <!-- Why join -->
   <main>
-    <section>
-      <h3>Why Join Our Community?</h3>
-      <p>FEESH brings together fishing fans of all levels to share, learn, and connect.</p>
+    <section class="why container">
+      <h2>Why Join Our Community?</h2>
+      <p class="lead">FEESH brings together fishing enthusiasts from all walks of life. Whether you're a beginner or a seasoned pro, there's something here for everyone.</p>
 
-      <ul>
-        <li><strong>Share your catch:</strong> Post photos and stories of your fishing adventures.</li>
-        <li><strong>Discover Spots:</strong> Find the best fishing locations shared by others.</li>
-        <li><strong>Learn Together:</strong> Exchange tips, techniques, and gear advice.</li>
-      </ul>
+      <div class="feature-row">
+        <article class="feature-card">
+          <h3>Share your catch</h3>
+          <p>Post photos and stories of your fishing adventures with fellow enthusiasts.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Discover Spots</h3>
+          <p>Find the best fishing locations shared by our community members.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Learn Together</h3>
+          <p>Exchange tips, techniques, and gear recommendations with experienced anglers.</p>
+        </article>
+      </div>
     </section>
 
-    <section>
-      <h3>Ready to Cast Your Line?</h3>
-      <p>Join thousands of fishing enthusiasts and share your passion for fishing.</p>
-      <a href="discord.html">Join our Discord Community</a>
+    <!-- CTA band -->
+    <section class="cta-band">
+      <div class="container">
+        <h3>Ready to Cast Your Line?</h3>
+        <p>Join thousands of fishing enthusiasts who share their passion, knowledge, and unforgettable moments on the water.</p>
+        <a href="discord.html" class="btn btn-dark">Join our Discord Community</a>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>©2025 FEESH.com</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="copy">©2025 FEESH.com</div>
+      <div class="socials">
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="Discord">DC</a>
+      </div>
+    </div>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 </html>
