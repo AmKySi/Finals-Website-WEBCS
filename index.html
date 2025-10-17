@@ -2,35 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FEESH - Home</title>
+  <link rel="icon" type="image/png" href="images/feesh_logo_mini.png" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="index.html">FEESH</a>
 
-      <button id="nav-toggle" class="nav-toggle" aria-label="Open navigation">
+      <!-- LOGO WITH MINI ICON -->
+      <a href="index.html" class="logo">
+        <img src="images/feesh_logo_mini.png" alt="FEESH logo" class="logo-mini" />
+      </a>
+
+      <!-- Hamburger button (mobile) -->
+      <button class="nav-toggle" aria-label="Open navigation">
         <span class="hamburger"></span>
       </button>
 
-      <nav id="main-nav" class="main-nav">
+      <!-- Navigation menu -->
+      <nav class="main-nav">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="about.html">About us</a></li>
           <li><a href="discord.html">Discord</a></li>
-          <li><a href="feedback.html">Feedback</a></li>     
+          <li><a href="feedback.html">Feedback</a></li>
         </ul>
       </nav>
+
     </div>
   </header>
 
-  <!-- Hero with placeholder image -->
+  <!-- Hero Section -->
   <section class="hero">
-    <img src="images/placeholder-hero.jpg" alt="Hero placeholder" class="hero-img" />
+    <img src="images/NO-COPYRIGHT-FISHING-1.jpg" alt="Hero placeholder" class="hero-img" />
     <div class="hero-overlay">
-      <img src="images/placeholder-logo.png" alt="FEESH logo" class="hero-logo" />
+      <img src="images/feesh_logo.png" alt="FEESH logo" class="hero-logo" />
       <p class="hero-sub">Connect with passionate fishing enthusiasts, share your experiences, and discover the best fishing spots together.</p>
       <div class="hero-cta">
         <a class="btn btn-light" href="about.html">Learn More</a>
@@ -39,7 +47,7 @@
     </div>
   </section>
 
-  <!-- Why join -->
+  
   <main>
     <section class="why container">
       <h2>Why Join Our Community?</h2>
@@ -63,7 +71,7 @@
       </div>
     </section>
 
-    <!-- CTA band -->
+    
     <section class="cta-band">
       <div class="container">
         <h3>Ready to Cast Your Line?</h3>
@@ -73,13 +81,20 @@
     </section>
   </main>
 
+  
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="copy">©2025 FEESH.com</div>
       <div class="socials">
-        <a href="#" aria-label="Facebook">FB</a>
-        <a href="#" aria-label="Instagram">IG</a>
-        <a href="#" aria-label="Discord">DC</a>
+        <a href="#" aria-label="Facebook">
+          <img src="images/FACEBOOK ICON.png" alt="Facebook">
+        </a>
+        <a href="#" aria-label="Instagram">
+          <img src="images/INSTAGRAM ICON.png" alt="Instagram">
+        </a>
+        <a href="#" aria-label="Discord">
+          <img src="images/DISCORD ICON.png" alt="Discord">
+        </a>
       </div>
     </div>
   </footer>

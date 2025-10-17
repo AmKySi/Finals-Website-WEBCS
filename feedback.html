@@ -4,28 +4,36 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>FEESH - Feedback</title>
+  <link rel="icon" type="image/png" href="images/feesh_logo_mini.png" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="logo" href="index.html">FEESH</a>
-      <button id="nav-toggle-4" class="nav-toggle" aria-label="Open navigation">
+      <!-- Mini logo only -->
+      <a href="index.html" class="logo">
+        <img src="images/feesh_logo_mini.png" alt="FEESH logo" class="logo-mini" />
+      </a>
+
+      <!-- Hamburger button -->
+      <button class="nav-toggle" aria-label="Open navigation">
         <span class="hamburger"></span>
       </button>
-      <nav id="main-nav-4" class="main-nav">
+
+      <!-- Navigation -->
+      <nav class="main-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About us</a></li>
           <li><a href="discord.html">Discord</a></li>
-          <li><a href="feedback.html">Feedback</a></li>
+          <li><a href="feedback.html" class="active">Feedback</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <section class="hero hero-small">
-    <img src="images/placeholder-feedback-hero.jpg" alt="Feedback hero placeholder" class="hero-img" />
+    <img src="images/NO-COPYRIGHT-FISHERMEN-2.jpg" alt="Feedback hero placeholder" class="hero-img" />
     <div class="hero-overlay">
       <h1>Share Your Feedback</h1>
       <p>Help us improve the FEESH community experience. Your feedback matters to us.</p>
@@ -49,9 +57,7 @@
                 <div class="small">How would you rate your overall experience with FEESH?</div>
               </td>
               <td class="rating-cell">
-                <!-- Simple radio group, visually styled -->
                 <div class="rating-row">
-                  <!-- generate radios 1..10 (only visual, not required to pick) -->
                   <label class="rating-dot">1<input type="radio" name="overall" value="1"></label>
                   <label class="rating-dot">2<input type="radio" name="overall" value="2"></label>
                   <label class="rating-dot">3<input type="radio" name="overall" value="3"></label>
@@ -66,7 +72,6 @@
               </td>
             </tr>
 
-            <!-- Copy same pattern for three more rows -->
             <tr>
               <td><strong>Community Helpfulness</strong><div class="small">How helpful have community members been to you?</div></td>
               <td class="rating-cell">
@@ -167,9 +172,15 @@
     <div class="container footer-inner">
       <div class="copy">©2025 FEESH.com</div>
       <div class="socials">
-        <a href="#" aria-label="Facebook">FB</a>
-        <a href="#" aria-label="Instagram">IG</a>
-        <a href="#" aria-label="Discord">DC</a>
+        <a href="#" aria-label="Facebook">
+          <img src="images/FACEBOOK ICON.png" alt="Facebook">
+        </a>
+        <a href="#" aria-label="Instagram">
+          <img src="images/INSTAGRAM ICON.png" alt="Instagram">
+        </a>
+        <a href="#" aria-label="Discord">
+          <img src="images/DISCORD ICON.png" alt="Discord">
+        </a>
       </div>
     </div>
   </footer>
